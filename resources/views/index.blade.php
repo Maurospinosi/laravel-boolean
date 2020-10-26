@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Boolean</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
     <table>
@@ -20,8 +21,8 @@
                 <td>{{$student->name}}</td>
                 <td>{{$student->lastname}}</td>
                 <td>{{$student->mail}}</td>
-                <td>{{$student->gender}}</td>
-                <td>{{$student->date_of_birth}}</td>
+                <td id="center">{{$student->gender}}</td>
+                <td id="center">{{$student->date_of_birth}}</td>
             </tr>
         @endforeach
     </table>
